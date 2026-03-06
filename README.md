@@ -36,13 +36,14 @@ Each ticket is also saved in its own file using the ticket ID.
 
   - Tickets can later be marked as paid.
 
-• When a ticket is paid, the system updates:
-  - The individual ticket file
-  - The main ticket record file
+  • When a ticket is paid, the system updates:
+    - The individual ticket file
+    - The main ticket record file
+
 
 - Admin Panel
 
-• The admin panel is where most of the management features exist.
+  • The admin panel is where most of the management features exist.
 
 From here the admin can:
 
