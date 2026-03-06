@@ -1,4 +1,4 @@
-Traffic Fine & Violation Management System (C++)
+# Traffic Fine & Violation Management System (C++)
 
 This was my Object Oriented Programming semester project. Honestly this semester had been pretty hectic for me because I had to deal with some big responsibilities in life while also trying to keep up with studies.
 
@@ -10,163 +10,122 @@ The main goal of this project was to make a Traffic Fine & Violation Management 
 
 The thing I was most excited about (and also the thing that took most of my time) was building the admin panel.
 
-What the System Can Do
+# What the System Can Do
 
 The system allows a few main operations.
 
-Generate Traffic Tickets
+- Generate Traffic Tickets
 
-A traffic officer can generate a ticket for a violation. The ticket stores things like:
+  A traffic officer can generate a ticket for a violation. The ticket stores things like:
 
-Ticket ID
-
-Driver information
-
-Vehicle type
-
-Violation committed
-
-Fine amount
-
-Payment status
+  - Ticket ID
+  - Driver information
+  - Vehicle type
+  - Violation committed
+  - Fine amount
+  - Payment status
 
 Each ticket is also saved in its own file using the ticket ID.
 
-Violation History
+- Violation History
 
-Every driver has a record of their violations.
+  - Every driver has a record of their violations.
+  - This makes it possible to check previous violations for a driver.
 
-This makes it possible to check previous violations for a driver.
+- Payment Management
 
-Payment Management
+  - Tickets can later be marked as paid.
 
-Tickets can later be marked as paid.
+• When a ticket is paid, the system updates:
+  - The individual ticket file
+  - The main ticket record file
 
-When a ticket is paid, the system updates:
+- Admin Panel
 
-The individual ticket file
-
-The main ticket record file
-
-Admin Panel
-
-The admin panel is where most of the management features exist.
+• The admin panel is where most of the management features exist.
 
 From here the admin can:
 
-Add new drivers
-
-Remove drivers
-
-Add traffic officers
-
-Remove officers
-
-View all registered drivers
-
-View all officers
-
-Add new traffic violations
-
-Remove violations
-
-Generate reports of tickets
+  - Add new drivers
+  - Remove drivers
+  - Add traffic officers
+  - Remove officers
+  - View all registered drivers
+  - View all officers
+  - Add new traffic violations
+  - Remove violations
+  - Generate reports of tickets
 
 This was honestly the part where I spent most of my time while building the project.
 
-Admin Password System
+- Admin Password System
 
-The admin panel is protected by a password system.
+  The admin panel is protected by a password system.
 
-Before accessing the admin functions, the user has to enter the correct password. The password itself is stored in a file and can also be changed from inside the admin panel.
+  Before accessing the admin functions, the user has to enter the correct password. The password itself is stored in a file and can also be changed from inside the admin panel.
 
-Implementing this properly was actually a bit tricky because I had to:
+  Implementing this properly was actually a bit tricky because I had to:
 
-Read the stored password from the file
-
-Compare it manually with user input
-
-Update the password file when it is changed
+  - Read the stored password from the file
+  - Compare it manually with user input
+  - Update the password file when it is changed
 
 Since we were working with character arrays instead of strings, this required writing extra logic for comparing and updating passwords.
 
-Concepts Used
+# Concepts Used
 
 This project was mainly built to practice Object Oriented Programming concepts, including:
 
-Classes and Objects
-
-Inheritance
-
-Abstract Classes
-
-Function modularity
-
-Dynamic memory allocation
-
-File handling
-
-Custom string handling using character arrays
+- Classes and Objects
+- Inheritance
+- Abstract Classes
+- Function modularity
+- Dynamic memory allocation
+- File handling
+- Custom string handling using character arrays
 
 The program is divided into multiple classes such as:
 
-Person (base class)
-
-Driver
-
-Officer
-
-Vehicle
-
-Car
-
-Bike
-
-Violation
-
-Ticket
-
-Payment
-
-TrafficDepartment
+  - Person (base class)
+  - Driver
+  - Officer
+  - Vehicle
+  - Car
+  - Bike
+  - Violation
+  - Ticket
+  - Payment
+  - TrafficDepartment
 
 Each class handles a specific part of the system which helped keep the code more organized.
 
-Data Storage
+# Data Storage
 
 All the information used by the system is stored in text files, including:
 
-Drivers
-
-Officers
-
-Violations
-
-Tickets
-
-Payment status
-
-Admin password
+  - Drivers
+  - Officers
+  - Violations
+  - Tickets
+  - Payment status
+  - Admin password
 
 This makes sure the data stays saved even after the program closes.
 
 Each ticket is also stored in a separate file generated using the ticket ID.
 
-Some Extra Things Implemented
+# Some Extra Things Implemented
 
 While building this project I also added a few things to make the system more consistent.
 
-Input Validation
+- Input Validation
+  Most user inputs like menu options and IDs are validated to avoid invalid entries.
+  
+- String Normalization
+  Names of drivers, officers, and violations are formatted consistently before being stored.
 
-Most user inputs like menu options and IDs are validated to avoid invalid entries.
-
-String Normalization
-
-Names of drivers, officers, and violations are formatted consistently before being stored.
-
-Custom String Functions
-
-Since we were restricted in using built-in utilities, I implemented my own helper functions such as:
+- Custom String Functions
+  Since we were restricted in using built-in utilities, I implemented my own helper functions such as:
 
 Copying character arrays
 
