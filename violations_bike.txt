@@ -1,0 +1,4 @@
+No Helmet	2000
+Wrong Lane	2000
+Reckless Driving	2500
+Over Speeding	2000

@@ -1,0 +1,4 @@
+Over Speeding	5000
+Signal Jump	2000
+No Seat Belt	2500
+Reckless Driving	6000

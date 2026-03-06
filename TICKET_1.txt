@@ -1,0 +1,7 @@
+Ticket ID: 1
+Driver: Muteeb Raza (344)
+Vehicle: Car | ID: 8987 | Model: Honda Civic
+Violation: Over Speeding
+Fine: Rs 5000
+Officer: Affham Nazir (601)
+Status: PAID
