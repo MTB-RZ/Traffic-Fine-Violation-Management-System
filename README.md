@@ -126,45 +126,35 @@ While building this project I also added a few things to make the system more co
 
 - Custom String Functions
   Since we were restricted in using built-in utilities, I implemented my own helper functions such as:
+  - Copying character arrays
+  - Appending arrays
+  - Normalizing strings
 
-Copying character arrays
-
-Appending arrays
-
-Normalizing strings
-
-Challenges While Making This
+# Challenges While Making This
 
 There were quite a few challenges while writing this project.
 
-Dynamic Memory Handling
+- Dynamic Memory Handling
+  - Since many things used dynamic memory allocation, I had to be careful to avoid memory leaks and incorrect memory usage.
 
-Since many things used dynamic memory allocation, I had to be careful to avoid memory leaks and incorrect memory usage.
+- Manual String Handling
+  - Working with character arrays instead of strings made even simple operations like comparisons and formatting more complicated.
 
-Manual String Handling
+- File Handling
+  - Managing multiple files and updating specific records required careful reading and rewriting of files.
 
-Working with character arrays instead of strings made even simple operations like comparisons and formatting more complicated.
+- Password System
+  - Implementing the admin password system without built-in utilities required writing manual comparison logic and handling password updates safely.
 
-File Handling
-
-Managing multiple files and updating specific records required careful reading and rewriting of files.
-
-Password System
-
-Implementing the admin password system without built-in utilities required writing manual comparison logic and handling password updates safely.
-
-What I Learned
+# What I Learned
 
 This project helped me understand how a bigger program is structured and how different parts of the system interact with each other.
 
 It also helped me get better at:
 
-Structuring classes
-
-Handling files
-
-Managing memory
-
-Debugging larger programs
+- Structuring classes
+- Handling files
+- Managing memory
+- Debugging larger programs
 
 Even though it was frustrating at times, it was still a pretty interesting project to work on.
